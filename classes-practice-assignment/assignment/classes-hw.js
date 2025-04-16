@@ -62,7 +62,21 @@ const problems = [
     // Then create one Bird and one Penguin, and call their fly() methods.
 
     // Write your class and code here
-    
+    class Bird{
+      fly(){
+        log("flying")
+      }
+      
+    }
+    class Penguin extends Bird{
+      fly(){
+        log("Penguins can't fly")
+      }
+    }
+    let robin = new Bird()
+    robin.fly()
+    let penguin = new Penguin()
+    penguin.fly()
   },
   function problem4() {
     // Problem 4:
@@ -73,6 +87,25 @@ const problems = [
     // Then create instances of Circle and Square and call their describe() methods.
 
     // Write your class and code here
+    class Shape{
+      describe(){
+        log("I am a shape")
+      }
+    }
+    class Circle extends Shape{
+      describe(){
+        log("I am a circle")
+      }
+    }
+    class Square extends Shape{
+      describe(){
+        log("I am a square")
+      }
+    }
+    let circle = new Circle()
+    circle.describe()
+    let square = new Square()
+    square.describe()
   },
   function problem5() {
     // Problem 5:
@@ -81,6 +114,21 @@ const problems = [
     // Then create an instance of Manager, and call both methods.
 
     // Write your class and code here
+    class Employee {
+      work(){
+        log("Working...")
+      }
+    }
+    class Manager extends Employee{
+      hireEmployee(){
+        log("Employee hired")
+      }
+    }
+    let manager = new Manager()
+    manager.work()
+    manager.hireEmployee()
+    
+    
   }
 ];
 
